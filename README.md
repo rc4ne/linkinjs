@@ -32,3 +32,8 @@ linkinjs -n 50 -dl js_files.txt -o js_links.txt
 # Improvement
 
 Lots of scope for improvement. I made this as side project during academics when trying Golang for first time. Most of inspiration from https://github.com/0xsha/GoLinkFinder. 
+
+-> Concurrency can be implemented in better way
+
+-> Implementing SecretFinder
+
