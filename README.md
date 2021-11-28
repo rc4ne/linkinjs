@@ -8,7 +8,7 @@ go get -u github.com/rc4ne/linkinjs
 
 cat list_of_subdomains.txt | gau -b woff,png,jpeg,jpg -o urls.txt
 
-cat urls.txt | grep "\.js" > js_files.txt
+cat urls.txt | grep "\\.js" > js_files.txt
 
 linkinjs -n 50 -dl js_files.txt -o js_links.txt
 
