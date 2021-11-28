@@ -4,7 +4,15 @@
 
 go get -u github.com/rc4ne/linkinjs
 
-# Usage
+# Efficient Usage with other tools like Gau
+
+cat list_of_subdomains.txt | gau -b woff,png,jpeg,jpg -o urls.txt
+
+cat urls.txt | grep "\.js" > js_files.txt
+
+linkinjs -n 50 -dl js_files.txt -o js_links.txt
+
+# Sample Usage
 
 ![linkinjs_0](https://user-images.githubusercontent.com/83397936/143763281-3f0b68f8-3869-4ef1-a821-c2f5dd2d959d.JPG)
 
